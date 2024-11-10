@@ -2,17 +2,16 @@ package umc.spring.domain.mapping;
 
 import jakarta.persistence.*;
 import lombok.*;
-import umc.spring.domain.Map;
+import umc.spring.domain.Region;
 import umc.spring.domain.User;
 import umc.spring.domain.common.BaseEntity;
-import umc.spring.domain.enums.MissionStatus;
 
 @Entity
 @Getter
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class UserMap extends BaseEntity {
+public class UserRegion extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,8 +22,8 @@ public class UserMap extends BaseEntity {
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "map_id")
-    private Map map;
+    @JoinColumn(name = "region_id")
+    private Region region;
 
     private String userAddress;  // 사용자의 주소
 }

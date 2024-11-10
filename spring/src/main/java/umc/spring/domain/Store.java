@@ -32,6 +32,19 @@ public class Store extends BaseEntity {
     private Long score;
 
     @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
+    @Builder.Default
     private List<Review> reviews = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Store{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", content='" + content + '\'' +
+                ", address='" + address + '\'' +
+                ", score=" + score +
+                ", reviews=" + reviews +
+                '}';
+    }
 
 }

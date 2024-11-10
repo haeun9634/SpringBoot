@@ -24,11 +24,4 @@ public class Alert extends BaseEntity {
     @Column(nullable = false)
     private AlertType alertType;
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private AgreeStatus alertAgree;
-
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
 }

@@ -22,6 +22,7 @@ public class Agree extends BaseEntity{
     @Column(nullable = false)
     private String content;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private AgreeStatus agreeStatus;
 }

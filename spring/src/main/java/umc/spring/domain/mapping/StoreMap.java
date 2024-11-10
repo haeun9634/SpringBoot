@@ -2,9 +2,8 @@ package umc.spring.domain.mapping;
 
 import jakarta.persistence.*;
 import lombok.*;
-import umc.spring.domain.Map;
+import umc.spring.domain.Region;
 import umc.spring.domain.Store;
-import umc.spring.domain.User;
 import umc.spring.domain.common.BaseEntity;
 
 @Entity
@@ -24,7 +23,7 @@ public class StoreMap extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "map_id")
-    private Map map;
+    private Region region;
 
 
 }

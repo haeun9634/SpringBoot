@@ -31,4 +31,14 @@ public class Review extends BaseEntity {
     @JoinColumn(name = "store_id")
     private Store store;
 
+    @Override
+    public String toString() {
+        return "Review{" +
+                "id=" + id +
+                ", content='" + content + '\'' +
+                ", score=" + score +
+                ", user=" + user +
+                //", store=" + store +
+                '}';
+    }
 }

@@ -3,7 +3,7 @@ package umc.spring.domain;
 import jakarta.persistence.*;
 import lombok.*;
 import umc.spring.domain.common.BaseEntity;
-import umc.spring.domain.mapping.UserMap;
+import umc.spring.domain.mapping.UserRegion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.List;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class Map extends BaseEntity {
+public class Region extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,6 +21,7 @@ public class Map extends BaseEntity {
     @Column(nullable = false)
     private String map_address;
 
-    @OneToMany(mappedBy = "map")
-    private List<UserMap> UserMapList = new ArrayList<>();
+    @OneToMany(mappedBy = "region")
+    @Builder.Default
+    private List<UserRegion> userRegionList = new ArrayList<>();
 }
