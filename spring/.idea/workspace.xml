@@ -5,45 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b79c2bf5-5891-4a20-ac98-d2d4ac1520e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/config/QueryDSLConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/UserAlert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/AlertRepository/AlertRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/AlertRepository/AlertRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/AlertRepository/AlertRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/MissionRepository/MissionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/MissionRepository/MissionRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/MissionRepository/MissionRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/ReviewRepository/ReviewRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/ReviewRepository/ReviewRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/ReviewRepository/ReviewRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/UserRepository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/UserRepository/UserRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/UserRepository/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/AlertService/AlertQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/AlertService/AlertQueryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/MissionService/MissionQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/MissionService/MissionQueryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/ReviewService/ReviewQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/ReviewService/ReviewQueryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/UserService/UserQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/UserService/UserQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/code/BaseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/code/BaseErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/code/ErrorReasonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/code/ReasonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/code/status/ErrorStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/code/status/SuccessStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/exception/ExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/exception/GeneralException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/exception/handler/TempHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/converter/TempConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/controller/TempRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/TempResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Agree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Agree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Alert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Alert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Region.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Mission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/enums/AgreeStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/enums/AgreeStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/StoreMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/StoreMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/UserAgree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/UserAgree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/UserMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/UserRegion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +59,12 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="spring" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -94,8 +77,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -121,6 +104,7 @@
     &quot;Gradle.spring [classes].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.spring [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.spring [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring [resolveMainClassName].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -227,6 +211,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="spring [resolveMainClassName]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="resolveMainClassName" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="umc.spring.Application" />
@@ -236,6 +242,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.spring [resolveMainClassName]" />
         <item itemvalue="Gradle.spring [build]" />
         <item itemvalue="Gradle.spring [clean]" />
         <item itemvalue="Gradle.spring [dependencies]" />

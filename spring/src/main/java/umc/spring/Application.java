@@ -31,7 +31,7 @@ public class Application {
 //			testUserQueryService(context);
 //			testReviewQueryService(context);
 //			testMissionQueryService(context);
-			testAlertQueryService(context);
+//			testAlertQueryService(context);
 		};
 	}
 
