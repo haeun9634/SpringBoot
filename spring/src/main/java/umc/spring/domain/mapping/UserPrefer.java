@@ -9,6 +9,7 @@ import umc.spring.domain.enums.FoodCategory;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor

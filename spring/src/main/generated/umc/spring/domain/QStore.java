@@ -31,11 +31,15 @@ public class QStore extends EntityPathBase<Store> {
 
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
+    public final ListPath<Mission, QMission> missions = this.<Mission, QMission>createList("missions", Mission.class, QMission.class, PathInits.DIRECT2);
+
     public final StringPath name = createString("name");
 
     public final ListPath<Review, QReview> reviews = this.<Review, QReview>createList("reviews", Review.class, QReview.class, PathInits.DIRECT2);
 
     public final NumberPath<Long> score = createNumber("score", Long.class);
+
+    public final ListPath<umc.spring.domain.mapping.StoreMap, umc.spring.domain.mapping.QStoreMap> storeRegions = this.<umc.spring.domain.mapping.StoreMap, umc.spring.domain.mapping.QStoreMap>createList("storeRegions", umc.spring.domain.mapping.StoreMap.class, umc.spring.domain.mapping.QStoreMap.class, PathInits.DIRECT2);
 
     //inherited
     public final DateTimePath<java.time.LocalDateTime> updatedAt = _super.updatedAt;

@@ -29,6 +29,8 @@ public class QRegion extends EntityPathBase<Region> {
 
     public final StringPath map_address = createString("map_address");
 
+    public final ListPath<umc.spring.domain.mapping.StoreMap, umc.spring.domain.mapping.QStoreMap> storeRegions = this.<umc.spring.domain.mapping.StoreMap, umc.spring.domain.mapping.QStoreMap>createList("storeRegions", umc.spring.domain.mapping.StoreMap.class, umc.spring.domain.mapping.QStoreMap.class, PathInits.DIRECT2);
+
     //inherited
     public final DateTimePath<java.time.LocalDateTime> updatedAt = _super.updatedAt;
 

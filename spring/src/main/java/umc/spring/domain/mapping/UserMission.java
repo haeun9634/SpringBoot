@@ -19,7 +19,8 @@ public class UserMission extends BaseEntity {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    private MissionStatus status;
+    @Builder.Default
+    private MissionStatus status=MissionStatus.CHALLENGING;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
@@ -28,4 +29,9 @@ public class UserMission extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "mission_id")
     private Mission mission;
+
+    public UserMission(User user, Mission mission){
+        this.user=user;
+        this.mission=mission;
+    }
 }

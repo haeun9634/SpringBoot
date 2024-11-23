@@ -26,4 +26,5 @@ public class StoreMap extends BaseEntity {
     private Region region;
 
 
+
 }
