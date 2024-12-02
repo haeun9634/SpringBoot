@@ -25,7 +25,7 @@ public class ReviewRepositoryImpl implements ReviewRepositoryCustom {
 
     @Override
     @Transactional
-    public Review dynamicQueryInsertReview(Long userId, String content, Long score, Long storeId) {
+    public Review dynamicQueryInsertReview(Long userId, String content, Float score, Long storeId) {
         User user = jpaQueryFactory.selectFrom(qUser)
                 .where(qUser.id.eq(userId))
                 .fetchOne();

@@ -16,7 +16,7 @@ public class ReviewQueryServiceImpl implements ReviewQueryService{
     private final ReviewRepository reviewRepository;
 
     @Override
-    public Review addReview(Long userId, String content, Long score, Long storeId) {
+    public Review addReview(Long userId, String content, Float score, Long storeId) {
         return reviewRepository.dynamicQueryInsertReview(userId, content, score, storeId);
     }
 }

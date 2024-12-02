@@ -53,7 +53,6 @@ public class Store extends BaseEntity {
                 ", content='" + content + '\'' +
                 ", address='" + address + '\'' +
                 ", score=" + score +
-                ", reviews=" + reviews +
                 '}';
     }
 

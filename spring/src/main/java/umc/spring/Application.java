@@ -50,7 +50,7 @@ public class Application {
 		ReviewQueryService reviewQueryService = context.getBean(ReviewQueryService.class);
 		Long userId = 1L;
 		String content = "Great store!";
-		Long score = 5L;
+		Float score = 5.0F;
 		Long storeId = 1L;
 
 		System.out.println("리뷰 생성 테스트");

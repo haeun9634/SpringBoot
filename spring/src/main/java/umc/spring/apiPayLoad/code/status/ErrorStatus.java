@@ -34,6 +34,8 @@ public enum ErrorStatus implements BaseErrorCode {
 
     FOOD_CATEGORY_NOT_FOUND(HttpStatus.NOT_FOUND, "FOOD4001","해당하는 음식 카테고리를 찾을 수 없습니다."),
 
+    NOT_PAGE_MISSION(HttpStatus.BAD_REQUEST, "PAGE4001","유효한 숫자가 아닙니다."),
+
     // For test
     TEMP_EXCEPTION(HttpStatus.BAD_REQUEST, "TEMP4001", "이거는 테스트");
 
@@ -65,4 +67,14 @@ public enum ErrorStatus implements BaseErrorCode {
                 .build()
                 ;
     }
+
+    public static ErrorStatus fromMessage(String message) {
+        for (ErrorStatus status : values()) {
+            if (status.getMessage().equals(message)) {
+                return status;
+            }
+        }
+        throw new IllegalArgumentException("No enum constant with message " + message);
+    }
+
 }

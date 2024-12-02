@@ -31,7 +31,7 @@ public class StoreRequestDTO {
         @ValidStoreExists
         private Long storeId;
         private String content;
-        private Long score;
+        private Float score;
     }
 
 

@@ -7,7 +7,7 @@ import umc.spring.web.dto.StoreResponseDTO;
 
 public interface StoreCommandService {
     StoreMap addStoreToRegion(Long storeId, Long regionId);
-    Review addStoreReview(Long storeId, Long userId, String content, Long score);
+    Review addStoreReview(Long storeId, Long userId, String content, Float score);
     StoreResponseDTO.StoreMissionResponseDTO addStoreMission(Long storeId, Long missionId);
     Long changeMissionStatus(Long userId, Long storeId, Long missionId);
 }

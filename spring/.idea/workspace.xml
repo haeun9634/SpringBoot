@@ -5,58 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b79c2bf5-5891-4a20-ac98-d2d4ac1520e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/exception/handler/PreferenceFoodHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/converter/StoreConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/converter/UserConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/PreferenceFoodRepository/PreferenceFoodRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/RegionRepository/RegionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/RegionRepository/RegionRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/RegionRepository/RegionRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/StoreRegionRepository/StoreRegionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/StoreRegionRepository/StoreRegionRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/StoreRegionRepository/StoreRegionRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/StoreRepository/StoreRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/StoreRepository/StoreRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/StoreRepository/StoreRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/UserMissionRepository/UserMissionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/UserMissionRepository/UserMissionRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/UserMissionRepository/UserMissionRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/StoreService/StoreCommandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/StoreService/StoreCommandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/UserService/UserCommandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/UserService/UserCommandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/annotation/ExistCategories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/annotation/ValidMissionChallenge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/annotation/ValidMissionExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/annotation/ValidStoreExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/annotation/ValidUserExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/validator/CategoriesExistValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/validator/MissionChallengeValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/validator/MissionExistsValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/validator/StoreExistsValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/validator/UserExistsValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/controller/StoreRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/controller/UserRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/StoreRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/StoreResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/UserRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/UserResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/StoreService/StoreQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/StoreService/StoreQueryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/annotation/CheckPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/validation/validator/PageValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/umc/spring/domain/QRegion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/umc/spring/domain/QRegion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/umc/spring/domain/QStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/umc/spring/domain/QStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/umc/spring/domain/QUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/umc/spring/domain/QUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/umc/spring/domain/QReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/umc/spring/domain/QReview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/code/status/ErrorStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/code/status/ErrorStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/exception/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/apiPayLoad/exception/ExceptionAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Mission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Region.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/converter/StoreConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/converter/StoreConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/converter/UserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/converter/UserConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Review.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/common/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/common/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/StoreMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/StoreMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/UserMission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/UserMission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/UserPrefer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/mapping/UserPrefer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/repository/MissionRepository/MissionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/MissionRepository/MissionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/repository/ReviewRepository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/ReviewRepository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/repository/ReviewRepository/ReviewRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/ReviewRepository/ReviewRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/repository/ReviewRepository/ReviewRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/ReviewRepository/ReviewRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/repository/StoreRepository/StoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/StoreRepository/StoreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/service/ReviewService/ReviewQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/ReviewService/ReviewQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/service/ReviewService/ReviewQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/ReviewService/ReviewQueryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/service/StoreService/StoreCommandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/StoreService/StoreCommandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/service/StoreService/StoreCommandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/StoreService/StoreCommandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/service/UserService/UserQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/UserService/UserQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/service/UserService/UserQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/UserService/UserQueryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/web/controller/StoreRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/controller/StoreRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/web/controller/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/controller/UserRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/StoreRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/StoreRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/StoreResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/StoreResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/UserResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/UserResponseDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +74,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
       </list>

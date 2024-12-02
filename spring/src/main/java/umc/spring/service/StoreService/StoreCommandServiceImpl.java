@@ -53,7 +53,7 @@ public class StoreCommandServiceImpl implements StoreCommandService {
     }
 
     @Override
-    public Review addStoreReview(Long storeId, Long userId, String content, Long score){
+    public Review addStoreReview(Long storeId, Long userId, String content, Float score){
         Store store = findStoreById(storeId);
         User user = findUserById(userId);
 

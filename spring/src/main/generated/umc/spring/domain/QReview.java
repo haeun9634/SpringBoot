@@ -31,7 +31,7 @@ public class QReview extends EntityPathBase<Review> {
 
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
-    public final NumberPath<Long> score = createNumber("score", Long.class);
+    public final NumberPath<Float> score = createNumber("score", Float.class);
 
     public final QStore store;
 

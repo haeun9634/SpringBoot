@@ -2,6 +2,9 @@ package umc.spring.web.dto;
 
 import lombok.*;
 
+import java.time.LocalDate;
+import java.util.List;
+
 public class StoreResponseDTO {
 
     @Getter
@@ -36,6 +39,28 @@ public class StoreResponseDTO {
         private String missionName;
     }
 
+    @Getter
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class MissionListDTO{
+        List<MissionDTO> missionList;
+        Integer listSize;
+        Integer totalPage;
+        Long totalElments;
+        Boolean isFirst;
+        Boolean isLast;
+    }
 
+
+    @Getter
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class MissionDTO{
+        String content;
+        LocalDate deadline;
+        Long point;
+    }
 
 }
