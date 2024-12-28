@@ -19,3 +19,5 @@ spring:
         hbm2ddl:
           auto: update
         default_batch_fetch_size: 1000
+  thymeleaf:
+    enable-spring-el-compiler: true

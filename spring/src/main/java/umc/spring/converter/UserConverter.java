@@ -30,10 +30,13 @@ public class UserConverter {
         return User.builder()
                 .nickname(request.getNickname())
                 .address(request.getAddress())
+                .email(request.getEmail())   // 추가된 코드
+                .password(request.getPassword())   // 추가된 코드
                 .phone(request.getPhone())
                 .specAddress(request.getSpecAddress())
                 .gender(request.getGender())
                 .name(request.getName())
+                .role(request.getRole())   // 추가된 코드
                 .birthDate(request.getBirthDate())
                 .UserPreferList(new ArrayList<>())
                 .build();

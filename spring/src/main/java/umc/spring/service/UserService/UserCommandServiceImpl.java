@@ -1,6 +1,7 @@
 package umc.spring.service.UserService;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import umc.spring.apiPayLoad.exception.handler.PreferenceFoodHandler;
@@ -24,11 +25,16 @@ public class UserCommandServiceImpl implements UserCommandService {
     private final UserRepository userRepository;
     private final PreferenceFoodRepository preferenceFoodRepository;
 
+    private final PasswordEncoder passwordEncoder;
+
     @Override
     @Transactional
     public User joinUser(UserRequestDTO.JoinDto request){
 
         User newUser = UserConverter.toUser(request);
+
+        newUser.encodePassword(passwordEncoder.encode(request.getPassword()));
+
         List<UserPrefer> userPreferList = request.getPreferCategory().stream()
                 .map(foodCategory -> {
                     PreferenceFood preferenceFood = preferenceFoodRepository
@@ -40,6 +46,10 @@ public class UserCommandServiceImpl implements UserCommandService {
                             .preferenceFood(preferenceFood)
                             .build();
                 }).collect(Collectors.toList());
+
+        // 로깅 추가
+        System.out.println("User: " + newUser);
+        System.out.println("User Prefers: " + userPreferList);
 
         // 3. User에 UserPrefer 설정
         newUser.addAllUserPrefers(userPreferList);

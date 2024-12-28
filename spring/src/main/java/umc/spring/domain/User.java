@@ -7,6 +7,7 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 import umc.spring.domain.common.BaseEntity;
 import umc.spring.domain.enums.Gender;
+import umc.spring.domain.enums.Role;
 import umc.spring.domain.enums.SocialType;
 import umc.spring.domain.enums.UserStatus;
 import umc.spring.domain.mapping.*;
@@ -63,8 +64,14 @@ public class User extends BaseEntity {
     @Column(nullable = true, length = 50)
     private String email;
 
+    @Column(nullable = false)
+    private String password;
+
     @ColumnDefault("0")
     private Integer point;
+
+    @Enumerated(EnumType.STRING)
+    private Role role;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     @Builder.Default
@@ -111,6 +118,8 @@ public class User extends BaseEntity {
         userPrefer.setUser(this);           // UserPrefer 객체의 user 필드 설정
     }
 
-
+    public void encodePassword(String password) {
+        this.password = password;
+    }
 
 }

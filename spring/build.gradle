@@ -54,6 +54,15 @@ dependencies {
 	implementation 'org.springdoc:springdoc-openapi-data-rest:2.3.0'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	//웹 보안 기능
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	testImplementation 'org.springframework.security:spring-security-test'
+
+	//thymeleaf
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	testImplementation 'org.springframework.security:spring-security-test'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE'
 }
 
 
