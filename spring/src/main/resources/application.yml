@@ -21,3 +21,21 @@ spring:
         default_batch_fetch_size: 1000
   thymeleaf:
     enable-spring-el-compiler: true
+  security:
+    oauth2:
+      client:
+        registration:
+          kakao:
+            client-authentication-method: client_secret_post
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
+            redirect-uri: http://localhost:8080/login/oauth2/code/kakao #인증 후 리다이엑트할 url
+            authorization-grant-type: authorization_code #사용할 OAuth 2.0 흐름
+            scope: profile_nickname #앱 요청하는 권한, 여기선 닉네임
+            client-name: Kakao #등록 사람이 읽을 수 있는 이름
+        provider:
+          kakao:
+            authorization-uri: https://kauth.kakao.com/oauth/authorize #카카오로 로그인하기 위해 리다이엑트 되는 url
+            token-uri: https://kauth.kakao.com/oauth/token #인증 코드를 엑세스 토큰으로 교환하는 url
+            user-info-uri: https://kapi.kakao.com/v2/user/me #애플리케이션 액세스 토큰 사용하여 사용자 정보 가져오는 url
+            user-name-attribute: id #사용자 정보 응답에서 주요 이름으로 사용할 속성 지정

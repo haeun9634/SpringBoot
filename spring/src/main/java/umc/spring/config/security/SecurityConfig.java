@@ -43,6 +43,11 @@ public class SecurityConfig {
                         .logoutUrl("/logout")//로그아웃 경로
                         .logoutSuccessUrl("/login?logout")//로그아웃 성공시 여기로 리다이엑트
                         .permitAll()
+                )
+                .oauth2Login(oauth2 -> oauth2
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/home", true)
+                        .permitAll()
                 );
 
         return http.build();

@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b79c2bf5-5891-4a20-ac98-d2d4ac1520e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/config/security/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/config/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/enums/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/controller/MemberViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/umc/spring/config/security/CustomUserDetailsServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umc/spring/config/security/CustomOAuth2UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/umc/spring/domain/QUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/umc/spring/domain/QUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/converter/UserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/converter/UserConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/repository/UserRepository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/repository/UserRepository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/service/UserService/UserCommandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/service/UserService/UserCommandServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/web/dto/UserRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/spring/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/spring/config/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +53,8 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -242,12 +230,34 @@
       <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="CLIENT_SECRET" value="xaM9N5mIpuYMv8yWWfm4xqZztSANLdEa" />
+        <env name="CLIENT_ID" value="d6c1fa744d2f1a216c89a452dd7ed49b" />
+      </envs>
       <module name="spring.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="umc.spring.Application" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.spring [build]" />
+      <item itemvalue="Gradle.spring [classes]" />
+      <item itemvalue="Gradle.spring [clean]" />
+      <item itemvalue="Gradle.spring [dependencies]" />
+      <item itemvalue="Gradle.spring [resolveMainClassName]" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.spring [dependencies]" />
