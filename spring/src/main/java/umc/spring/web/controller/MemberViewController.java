@@ -41,6 +41,7 @@ public class MemberViewController {
 
     @GetMapping("/login")
     public String loginPage() {
+
         return "login";
     }
 

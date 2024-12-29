@@ -1,5 +1,7 @@
 package umc.spring.web.controller;
 
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.ExpiredJwtException;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
@@ -9,14 +11,17 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import umc.spring.apiPayLoad.ApiResponse;
+import umc.spring.config.security.JwtTokenProvider;
 import umc.spring.converter.UserConverter;
 import umc.spring.domain.Mission;
 import umc.spring.domain.Review;
 import umc.spring.domain.User;
 import umc.spring.domain.enums.MissionStatus;
+import umc.spring.repository.UserRepository.UserRepository;
 import umc.spring.service.UserService.UserCommandService;
 import umc.spring.service.UserService.UserCommandServiceImpl;
 import umc.spring.service.UserService.UserQueryService;
@@ -34,11 +39,43 @@ public class UserRestController {
 
     private final UserCommandService userCommandService;
     private final UserQueryService userQueryService;
+    private final UserRepository userRepository;
+    private final JwtTokenProvider tokenProvider;
 
     @PostMapping("/")
     public ApiResponse<UserResponseDTO.JoinResultDTO> join(@RequestBody @Valid UserRequestDTO.JoinDto request){
         User user = userCommandService.joinUser(request);
         return ApiResponse.onSuccess(UserConverter.toJoinResultDTO(user));
+    }
+
+    //토큰 재발행
+    @PostMapping("/refresh")
+    public ResponseEntity<?> refreshToken(@RequestHeader("Authorization") String token) {
+        try {
+            if (token.startsWith("Bearer ")) {
+                token = token.substring(7);
+            }
+
+            Claims claims;
+            try {
+                claims = tokenProvider.validateAndGetClaims(token);
+            } catch (ExpiredJwtException e) {
+                claims = e.getClaims();
+            }
+
+            if (claims != null) {
+                User user = userRepository.findUserDataByUserId(Long.parseLong(claims.getSubject()));
+                if (user != null) {
+                    String newToken = tokenProvider.create(user);
+                    return ResponseEntity.ok().body("새로운 토큰: " + newToken);
+                }
+            }
+
+            return ResponseEntity.badRequest().body("유효하지 않은 사용자 정보입니다.");
+
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body("유효하지 않은 토큰입니다.");
+        }
     }
 
     @GetMapping("/{userId}/reviews")

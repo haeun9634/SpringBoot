@@ -20,12 +20,12 @@ public class UserRepositoryImpl implements UserRepositoryCustom{
 
     //유저 정보 가져오는 쿼리
     @Override
-    public List<User> findUserDataByUserId(Long userId) {
+    public User findUserDataByUserId(Long userId) {
         User user = jpaQueryFactory.selectFrom(qUser)
                 .where(qUser.id.eq(userId))
                 .fetchOne();
 
-        return List.of(user);//사용자 정보 넘김
+        return user;//사용자 정보 넘김
     }
 
     //사용자가 작성한 리뷰 가져오는 쿼리
