@@ -14,6 +14,7 @@ import umc.spring.repository.ReviewRepository.ReviewRepository;
 import umc.spring.repository.UserRepository.UserRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -25,8 +26,8 @@ public class UserQueryServiceImpl implements UserQueryService {
     private final MissionRepository missionRepository;
 
     @Override
-    public List<User> getUserDataByUserId(Long userId) {
-        return userRepository.findUserDataByUserId(userId);
+    public Optional <User> getUserDataByUserId(Long userId) {
+        return userRepository.findUserById(userId);
     }
 
     @Override

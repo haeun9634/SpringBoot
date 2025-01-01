@@ -27,12 +27,14 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests((requests) -> requests//접근 제어
                         //requestMatchers //특정 url 패턴에 대한 접근 권한 설정
-                        .requestMatchers("/", "/home", "/signup", "/users/signup","/css/**").permitAll()
+                        .requestMatchers("/", "/home", "/signup", "/users/signup","/css/**",
+                                "/swagger-ui/**", "/v3/api-docs/**").permitAll()
                         //.permitAll()은 인증 없이 접근 가능한 경로
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         //.hasRole("ADMIN")은 'ADMIN" 역할을 가진 사용자만 접근 가능하도록 제한
                         .anyRequest().authenticated()
                         //그외 모든 요청에 대한 인증 요구
+
                 )
                 .formLogin((form) -> form//폼 기반 로그인
                         .loginPage("/login")//커스텀 로그인 페이지를 /login경로로 지정
